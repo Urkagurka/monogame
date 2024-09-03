@@ -35,3 +35,4 @@ C:\Users\Admin\Documents\GitHub\monogame\obj\Debug\net6.0-windows\refint\monogam
 C:\Users\Admin\Documents\GitHub\monogame\obj\Debug\net6.0-windows\monogame.pdb
 C:\Users\Admin\Documents\GitHub\monogame\obj\Debug\net6.0-windows\monogame.genruntimeconfig.cache
 C:\Users\Admin\Documents\GitHub\monogame\obj\Debug\net6.0-windows\ref\monogame.dll
+C:\Users\Admin\Documents\GitHub\monogame\obj\Debug\net6.0-windows\monogame.sourcelink.json

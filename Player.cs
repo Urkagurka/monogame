@@ -1,32 +1,35 @@
+using System.Linq.Expressions;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
 namespace monogame
 {
-    public class Player
+    public class Player : BaseClass
     {
-        Vector2 position = new Vector2(400,240);
-        Texture2D texture;
+
   
-        public Player(Texture2D texture){
-            this.texture = texture;
+        public Player(Texture2D texture): base(texture, new Vector2(400,240)){
         }
 
 
         public void Update(){
         KeyboardState kState = Keyboard.GetState();
         if(kState.IsKeyDown(Keys.W)){
-            position.Y -=5;
+            position.Y -=10;
         }
         if(kState.IsKeyDown(Keys.S)){
-            position.Y +=5;
+            position.Y +=10;
         }
         if(kState.IsKeyDown(Keys.A)){
-            position.X -=5;
+            position.X -=10;
         }
         if(kState.IsKeyDown(Keys.D)){
-            position.X +=5;
+            position.X +=10;
+        }
+        if(kState.IsKeyDown(Keys.R)){
+            position.X =0;
+            position.Y =0;
         }
         }
         public void Draw(SpriteBatch spriteBatch){
