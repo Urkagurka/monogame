@@ -13,6 +13,8 @@ public class Game1 : Game
 
     Texture2D pixel;
 
+    Enemy enemy;
+
 
     public Game1()
     {
@@ -35,6 +37,9 @@ public class Game1 : Game
         pixel.SetData(new Color[]{Color.White});
 
         player = new Player(pixel);
+        enemy = new Enemy(pixel, new Vector2(100,100));
+
+
         // TODO: use this.Content to load your game content here
     }
 

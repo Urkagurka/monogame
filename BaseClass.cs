@@ -7,6 +7,7 @@ namespace monogame
     {
         protected Vector2 position;
         protected Texture2D texture;
+        protected Color color;
 
         public BaseClass(Texture2D texture, Vector2 position){
             this.texture = texture;
